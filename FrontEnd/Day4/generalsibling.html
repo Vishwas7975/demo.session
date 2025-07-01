@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selectors</title>
+    <style>
+    div~p {
+        background-color: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        This is a div tag <!--Tiddle (~)-->
+        <p>This a paragragh tag inside div</p>
+    </div>
+    <span>This is a span tag (it wont select)</span>
+    <p>this is a paragragh tag along with div</p>
+    <p>this is a paragragh tag along with div</p>
+</body>
+</html>

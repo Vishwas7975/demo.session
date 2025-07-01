@@ -1,0 +1,25 @@
+What is CDN? (Content delivery network)
+    : Used to deliver the content of the web pages form the surrounding server to the client
+
+Font Awesome
+    : It is used to add the icons in the web pages
+    : It is free and open source 
+    : It is a library of icons
+
+uiVerse 
+    : It is a open source library of templates and components
+    : It is used to design the web pages
+
+css specificity rule 
+            universal<element/pseudo-element<class/attribute/pseudo-class<id<inline
+
+git : Git is a version control system where we can store, modify, read the data
+    : We can track the codegitg
+
+git init
+git add .
+git commit -m "text"
+git remote add origin paste your github link here 
+git push origin master 
+or 
+git push origin main 

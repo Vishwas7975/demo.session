@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .form {
+            width: 60%;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            padding: 20px;
+            border: 2px solid #ccc;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            flex: 0 0 220px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            flex: 1;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <fieldset>
+            <legend>AADHAAR DETAILS</legend>
+
+            <h3 style="background-color:red;color:white; text-align: center;">CERTIFICATE FOR AADHAAR ENROLLMENT/UPDATE</h3>
+            <p style="text-align: center;">All the details to be filled in Block Letters</p>
+            <h3 style="background-color: red;color:white; text-align: center;">Resident's Details</h3>
+
+            <div class="form-group">
+                <label for="aadhaar">Aadhaar Number:</label>
+                <input type="number" id="aadhaar">
+            </div>
+
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="co">C/o:</label>
+                <input type="text" id="co" required>
+            </div>
+
+            <div class="form-group">
+                <label for="house">House No./Apt:</label>
+                <input type="text" id="house" required>
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street/Road/Lane:</label>
+                <input type="text" id="street" required>
+            </div>
+
+            <div class="form-group">
+                <label for="landmark">Landmark:</label>
+                <input type="text" id="landmark" required>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Area/Locality/Section:</label>
+                <input type="text" id="area" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Village/Town/City:</label>
+                <input type="text" id="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="post">Post Office:</label>
+                <input type="text" id="post" required>
+            </div>
+
+            <div class="form-group">
+                <label for="District">District:</label>
+                <select name="District" id="District">
+                    <option value="Chikkaballapura">Chikkaballapura</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Ballari">Ballari</option>
+                    <option value="Chikkamagluru">Chikkamagluru</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="State">State:</label>
+                <select name="State" id="State">
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="AndhraPradesh">AndhraPradesh</option>
+                    <option value="Kerala">Kerala</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

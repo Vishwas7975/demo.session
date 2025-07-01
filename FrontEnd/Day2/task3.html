@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+</head>
+
+<body>
+    <h1><mark><u>Lists</u></mark></h1>
+    <blockquote>It is used to display list of items</blockquote>
+    <blockquote>
+        <ol>
+            <li>ordered list</li>
+            <li>unordered list </li>
+            <li>data defintion/ description list</li>
+            <li>nested list </li>
+        </ol>
+    </blockquote>
+    <hr> <!--horizontal line-->
+    <h2><u>Ordered list</u></h2>
+    <blockquote>It is used to display number list/in a specific order
+        <p>ol tag is used to create a ordered list</p>
+        <p>The default order is number (1,2,3...)</p>
+        <p>Type attribute helps to change the default order(Type="A","a","1","I","i")</p>
+        <p>Reversed attribute helps to reverse the order</p>
+        <p>Start attribute helps to start the list form a specific number</p>
+    </blockquote>
+
+    <ol start="12">
+        <li>Mango</li>
+        <li>jackfruit</li>
+        <li>cherry</li>
+        <li>banana</li>
+    </ol>
+    <ol type="A" start="5" reversed> <!--start should be always mentioned in numbers-->
+        <li>tomato</li>
+        <li>onion</li>
+        <li>carrot</li>
+        <li>potato</li>
+    </ol>
+    <ol type="I">
+        <li>jasmine</li>
+        <li>rose</li>
+        <li>sunflower</li>
+        <li>hibiscus</li>
+    </ol>
+    <hr>
+
+    <h2><u>Unordered list</u></h2>
+    <blockquote>
+        <p>It is used to display a list without any order</p>
+        <p>ul tag is used to create a unordered list</p>
+        <p>Type attribute helps to change the default order (type="disc","sqaure")</p>
+    </blockquote>
+
+    <ul type="square">
+        <li>Pavan kalyan</li>
+        <li>Allu arjun</li>
+        <li>Prabhas</li>
+        <li>Upendra</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Kajal</li>
+        <li>Samantha</li>
+        <li>Sai pallavi</li>
+        <li>Shruthi hassan</li>
+    </ul>
+    <hr>
+
+
+    <h2><u>Data description list/ description list</u></h2>
+    <blockquote>
+        <p>It is used to display a list of terms and their description</p>
+        <p>dl tag is used to create a data definition</p>
+        <p>dt tag is used to define a term</p>
+        <p>dd tag is used to define a description</p>
+    </blockquote>
+
+    <dl>
+        <dt><abbr title="Hypertext markup language">HTML</abbr></dt>
+        <dd>It is used to provide structure/layout to the web pages</dd>
+        <dt><abbr title="Cascading style sheets">CSS</abbr></dt>
+        <dd>It is used to design/style of the web pages</dd>
+        <dt><abbr title="javascript">JS</abbr></dt>
+        <dd>It is used to logic/functionality of the web pages</dd>
+    </dl>
+    <hr>
+
+    <h2><u>Nested list</u></h2>
+    <blockquote>
+        <p>It is used to display a list inside another list</p>
+    </blockquote>
+
+    <ol>
+        <li>Fruits
+            <ol>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ol>
+        </li>
+        <li>Vegetables
+            <ol>
+                <li>Cabbage</li>
+                <li>Capsicum
+                    <ol>
+                        <li>Green Capsicum</li>
+                        <li>Yellow Capsicum</li>
+                        <li>Red Capsicum</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+</body>
+
+</html>

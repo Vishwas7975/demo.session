@@ -1,0 +1,63 @@
+CSS - Cascading style sheet
+    : Used to provide style/design to the web pages
+    : css flies will be linked to the html flies
+    : css flies will be linked to the html flies using the <link> tag in html flie
+    : ctrl + / is used to comment in css
+
+Applying css to the web pages 
+     1. inline css
+     2. internal css 
+     3. external css
+
+Inline Css : It is used to apply the css to the web pages using the style attribute in html file 
+    Ex: <p style = "color:red";>loreum ipsum</p>
+Note: Not recommended for large web pages
+      It is recommended for small web pages when we are applying style for single element
+
+Selector : It is used to select the elements in web pages
+Syntax : 
+         Selector {
+            property : value;
+            property2 : value2;
+         }
+
+Internal Css : It is used to apply the css to the web pages using the <style> tag in html file
+    Ex: <style>
+            p {
+                color:"red";
+            }
+Note: It is recommended for small/single web pages 
+
+External Css : It is used to apply the css to the web pages using the <link> tag in html file
+             : need to create a css file with .css extension
+             : css file need to link to the html file using the <link> tag
+    Ex: <link rel:"stylesheet" href:"external.css">
+Note: It is recommended for large web pages and multiple web pages
+
+Box Model: 
+    - used to design the layout of the web pages
+    - box model consist of content, padding, border and margin 
+
+Content: the content of the box model 
+Padding: the space between the content and the border
+Border: the border of the box model 
+Margin: the space between the box model (element) and the other box models(element)
+
+Block-level Elements:
+    - elements occupy the full width of the page
+    - it supports margin and padding 
+    - it supports height and width
+
+Inline-level Elements:
+    - elements do not occupy the full width of the page
+    - it does not support height and width
+
+Conversion of block to inline level elements:
+    display:inline-block; - it supports height and width
+    or
+    display:inline; - it won't support height and width
+
+
+
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors 1</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        #id1 {
+            color: maroon;
+        }
+
+        .class1 {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selector:</h1>
+    <blockquote>It is used to select HTML elements for styling purpose</blockquote>
+    <hr>
+    <ul>
+        <li>element selector</li>
+        <li>id selector</li>
+        <li>class selector</li>
+        <li>attribute selector</li>
+        <li>grouping selector</li>
+        <li>Universal selector</li>
+        <li>combined selector
+            <ul>
+                <li>descendent selector</li>
+                <li>child selector</li>
+                <li>adjacent selector</li>
+                <li>general sibling Selector</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2><u>Element Selector:</u></h2>
+    <blockquote>It is used to select elements by their tag name</blockquote>
+    <pre>
+        syntax:       tagname {
+                          property:value;
+                        }
+    </pre>
+
+    <h2><u>Id Selector:</u></h2>
+    <blockquote id="id1">It is used to select elements by their id
+        <p>Id is an attribute used in opening tag</p>
+        <p>Id should be unique</p>
+        <p>Id selector indicated with #</p>
+    </blockquote>
+    <pre>
+            syntax:      #idName {
+                              property:value;
+                            }
+        </pre>
+
+    <h2><u>Class Selector:</u></h2>
+    <blockquote>
+        It is used to select elements by their class
+        <p class="class1">class is an attribute used in opening tag</p>
+        <p class="class1">class name should be duplicate</p>
+        <p class="class1">class selector is indicated with .</p>
+        <pre>
+        syntax:          .class1 {
+                              property:vlaue;
+                            }
+    </pre>
+    </blockquote>
+
+    <h2><u>Grouping Selector:</u></h2>
+    <blockquote>
+        It is used to select elements as grouping
+        <p>grouping selector indicated with ,</p>
+        <p>It is used to apply same style to multiple elements</p>
+    </blockquote>
+    <pre>
+        syntax:         selector1,selector2, selector3 {
+                                                   property:value;
+                                                }
+    </pre>
+
+    <h2><u>Combined Selector:</u></h2>
+    <blockquote>It is used to combine multiple selectors
+        <p>It is used to apply same style to multiple elements</p>
+    </blockquote>
+
+    <h3><u>Descendent Selector:</u></h3>
+    <blockquote>It is used to select elements that are descendent of a specified element
+        <p>Used to select both direct and indirect child element</p>
+        <p>descendent selector indicated with a space</p>
+    </blockquote>
+    <pre>
+        syntax:        parent child {
+                          property:value;
+                       }
+    </pre>
+
+    <h3><u>Child Selector:</u></h3>
+    <blockquote>It is used to select elements that are direct children of a specified element
+        <p>Used to select only direct child element</p>
+        <p>child selector indicated with a (>) </p>
+    </blockquote>
+    <pre>
+        syntax:        parent>child {
+                          property:value;
+                       }
+    </pre>
+
+    <h3><u>Adjacent Sibling Selector:</u></h3>
+    <blockquote>It is used to select elements that are adjacent sibling of a specified element
+        <p>Used to select only the next sibling element</p>
+        <p>adjacent sibling selector indicated with a (+)</p>
+    </blockquote>
+    <pre>
+        syntax:        element1 + element2 {
+                          property:value;
+                       }
+    </pre>
+
+    <h3><u>General Sibling Selector:</u></h3>
+    <blockquote>It is used to select elements that are general siblings of a specified element
+        <p>Used to select all sibling elements</p>
+        <p>general sibling selector indicated with a (~)</p>
+    </blockquote>
+    <pre>
+        syntax:        element1 ~ element2 {
+                          property:value;
+                       }
+    </pre>
+    </blockquote>
+
+    <h2><u>Universal Selector</u></h2>
+    <blockquote>It is used to select all elements
+        <p>Universal selector indicated with *</p>
+    </blockquote>
+    <pre>
+        syntax:       *{
+                        property: value;
+                    }
+        Note : it is recommended to have 
+        padding :0;
+        margin:0;
+        box-sizing: border-box;
+        content-box-it is used to set the box model by default
+                   -it calculates the width and height of an element
+                    including padding and border
+                    ex: width: 100px;
+                        height: 100px;
+                        padding: 10px;
+                        border: 2px solid black;
+                        box-sizing: content-box;
+                    calculation:
+                        width: 100px + 10px + 10px + 2px + 2px = 124px;
+                        height:100px + 10px + 10px + 2px + 2px = 124px;
+                        
+     box-sizing: border-box-it is used to set the box model by manually
+                -it calculates the width and height of an element 
+                including padding and border and provides the exact width and height
+                ex: width: 100px;
+                    height: 100px;
+                    padding: 10px;
+                    border: 2px solid black;
+                    box-sizing: border-box;
+                calculation:
+                    width: 100px + 10px + 2px = 100px;
+                    height: 100px + 10px + 2px = 100px;
+
+    </pre>
+
+</body>
+
+</html>

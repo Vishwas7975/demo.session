@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 1000px;
+            text-align: center;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .violet {
+            background-color: violet;
+        }
+        tfooter {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" class="yellow">8.00 am</td>
+            <td rowspan="2" class="violet">5.00 pm</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity to DTD</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td class="yellow">8.00 am</td>
+            <td class="yellow">11.00 am</td>
+            <td>Xpath</td>
+        </tr>
+        <tr>
+            <td class="yellow">11.00 am</td>
+            <td class="green">2.00 pm</td>
+            <td rowspan="2">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td class="green">2.00 pm</td>
+            <td class="violet">5.00 pm</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="yellow">8.00 am</td>
+            <td class="green">12.00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <tfooter>
+        Table Rowspan and Colspan
+    </tfooter>
+</body>
+
+</html>
