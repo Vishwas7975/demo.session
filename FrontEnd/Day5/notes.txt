@@ -22,3 +22,5 @@ Attributes of a cell:
 4. align - used to align the content horizontaly (left,right,center)
 5. bgcolor - used to provide background color
 6. style - used to provide styling
+
+pseudo classes:
