@@ -1,0 +1,119 @@
+anchor tag:
+------------
+     - <a> tag - used to create a link, which can navigate to another page
+     - <a> tag attributes:
+         1.href - used to specify the URL of the linked page
+         2.target - used to specify the target of the linked page
+            target="_blank" - opens the linked page in a new tab
+            target="_self" - opens the linked page in the same tab
+            target="_parent" - opens the linked page in the parent frame
+            target="_top" - opens the linked page in the top frame
+         3.rel - used to specify the relationship of the linked page
+         4.download - used to specify the download attribute of the linked page
+
+iframe tag:
+-----------
+     - <iframe> tag - used to create an inline frame,
+                      which can navigate to another page
+     - <iframe> tag attributes:
+         1.src - used to specify the URL of the linked page
+         2.width - used to specify the width of the frame
+         3.height - used to specify the height of the frame
+         4.frameborder - used to specify the border of the frame
+         5.scrolling - used to specify the scrolling of the frame
+
+
+embed tag:
+----------
+        - <embed> tag - used to embed a file in the web page
+        - <embed> tag attributes:
+            1.src - used to specify the URL of the file
+            2.type - used to specify the type of the file
+                audio-audio/mp3
+                video-video/mp4
+                image-image/jpeg
+            3.width - used to specify the width of the file
+            4.height - used to specify the height of the file
+Note:it can embed image,video,audio,pdf etc in the web pages
+    but won't support controls
+
+image tag:
+---------
+    - <img> tag - used to add an image in the web page
+    - <img> tag attributes:
+        1.src - used to specify the URL of the image
+        2.width - used to specify the width of the image
+        3.height - used to specify the height of the image
+        4.alt - used to specify the alternative text of the image
+        5.title - used to specify the title of the image
+
+audio tag:
+----------
+    - <audio> tag - used to add an audio in the web page
+    - <audio> tag attributes:
+        1.src - used to specify the URL of the audio
+        2.controls - used to specify the controls of the audio
+        3.autoplay - used to specify the autoplay of the audio
+        4.loop - used to specify the loop of the audio
+
+video tag:
+----------
+    - <video> tag - used to add a video in the web page
+    - <video> tag attributes:
+        1.src - used to specify the URL of the video
+        2.controls - used to specify the controls of the video
+        3.autoplay - used to specify the autoplay of the video
+        4.loop - used to specify the loop of the video
+        5.poster - used to specify the poster of the video
+
+figure and figCation tags:
+--------------------------
+    - <figure> tag - used to add a figure in the web page
+    - <figcaption> tag - used to add a caption to the figure
+
+details and summary tags:
+-------------------------
+    - <details> tag - used to add a details in the web page
+    - <summary> tag - used to add a summary to the details
+
+marquee tag:
+-----------
+    - <marquee> tag - used to scroll the content in the web page
+    - <marquee> tag attributes:
+      1.direction - used to specify the direction of the scroll
+         direction="left" - scroll from right to left (default)
+         direction="right" - scroll from left to right
+         direction="up" - scroll towards top
+         direction="down" - scroll towards bottom
+      2.behavior - used to specify the behavior of the scroll
+         behavior="alternate" - scroll back and forth
+         behavior="scroll" - scroll indefinitely(default)
+         behavior="slide" - scroll once
+      3.scrollamount - used to specify the speed of the scroll
+      4.scrolldelay - used to specify the delay of the scroll
+      5.loop - used to specify the number of times the scroll repeats
+      
+semantic tags :
+-------------
+    - semantic tags are used to provide meaning to the web pages
+    - semantic tags are used to improve the accessibility, searchability ans usability of the web pages
+    - introduced in html5
+
+tags:
+----
+1.<header> tag - used to add a header in the web page 
+2.<nav> tag  - used to add a navigation in the web page 
+3.<main> tag  - used to add a main content in the web page 
+4.<section> tag  - used to add a section in the web page 
+5.<article> tag  - used to add a article in the web page 
+6.<footer> tag  - used to add a footer in the web page 
+7.<aside> tag  - used to add a aside in the web page 
+8.<address> tag  - used to add address in the web page
+
+
+
+
+
+
+
+

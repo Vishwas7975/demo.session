@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class and Pseudo element</title>
+    <style>
+        p {
+            color: rgb(255, 0, 242);
+            font-size: 20px;
+        }
+
+        /* p:hover {
+            font-size: 30px;
+        } */
+
+        div {
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:hover {
+            background-color: darkblue;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Unvisited link*/
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        /* active link */
+        a:active {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Visited link */
+        a:visited {
+            color: red;
+        }
+
+        #line1::first-line {
+            color: blue;
+            font-size: 50px;
+        }
+        #line2::first-letter {
+            color: red;
+            font-size: 100px;
+        }
+        #line3::selection {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Pseudo Classes</u></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, excepturi!</p>
+    <br>
+    <div></div>
+    <br>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Nat_Geo_Wild">Nat Geo Wild</a>
+    <a
+        href="https://www.bing.com/search?q=swiggy&form=ANNTH1&refig=1bfcf5f19dd949a3a89322b58120eec3&pc=ACTS&pq=sw&pqlth=2&assgl=6&sgcn=swiggy&qs=MB&sgtpv=AS&smvpcn=0&swbcn=10&sctcn=0&sc=10-2&sp=3&ghc=0&cvid=1bfcf5f19dd949a3a89322b58120eec3&clckatsg=1&hsmssg=0">Swiggy
+        Instamart</a>
+    <br>
+    <br>
+
+    <h2><u>Pseudo Elements</u></h2>
+    <p id="line1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cumque repudiandae iusto! Ipsum soluta beatae
+        tenetur nihil veniam quo aperiam harum blanditiis cupiditate porro, quidem in eos, autem commodi et quod neque
+        ratione! Accusantium commodi sed repellendus deserunt minus a, incidunt facere tempore, impedit cupiditate
+        quaerat fugiat sit rerum assumenda ea. Magnam eum nostrum quis vero dolorem earum tempora dolore placeat tempore
+        hic temporibus, ipsam vel? Cumque animi doloribus sunt iste distinctio atque omnis nostrum consequuntur iusto
+        earum voluptatibus, incidunt repudiandae ab nulla. Corrupti iste dolores officiis debitis sint minus in
+        aspernatur, molestiae incidunt sunt vero odit voluptatibus doloribus commodi.
+    </p>
+    <br>
+    <p id="line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, qui.</p>
+    <br>
+    <br>
+    <p id="line3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam minima ipsum atque voluptate eligendi nulla voluptatem deleniti est, cumque perspiciatis nam ut ipsam in debitis optio nostrum aperiam omnis ullam architecto eos illo at eius nisi. Adipisci praesentium placeat, ad aut dolor expedita, cum totam laudantium dolores ut tenetur aliquam iure vero ex optio veritatis suscipit? Ipsam commodi ipsa iusto assumenda in sit voluptas tempora porro, est aliquid, ad atque deleniti? Esse dignissimos dolorum in ullam sint facilis repellat nemo, a temporibus inventore, doloribus nam magni, quisquam blanditiis mollitia ipsa optio suscipit delectus reprehenderit iusto soluta quam voluptatem ratione.</p>
+</body>
+
+</html>

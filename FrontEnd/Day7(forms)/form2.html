@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2 Task</title>
+    <style>
+        form {
+            border: 2px solid grey;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form2 Task</h1>
+    <form action="https://httpbin.org/get">
+        <fieldset>
+            <legend><b>Basic Information</b></legend>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="Username" placeholder="Enter your Name" required> <br><br>
+            <label for="name1">Father Name : </label>
+            <input type="text" id="name1" name="Userfathername" placeholder="Enter your Father Name" required> <br><br>
+            <label for="name2">Mother Name : </label>
+            <input type="text" id="name2" name="Usermothername" placeholder="Enter your Mother Name" required> <br><br>
+            <label for="age">Age : </label>
+            <input type="number" id="age" name="Userage" placeholder="Age" min="18" max="45" required> <br><br>
+            <label for="gender">Gender : </label>
+            <input type="radio" id="gender" name="usergender" value="Male" checked>Male
+            <input type="radio" id="gender" name="usergender" value="Female">Female
+            <input type="radio" id="gender" name="usergender" value="Others">Others
+            <br><br>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" name="Userdob"> <br><br>
+            <label for="profile">Profile Picture : </label>
+            <input type="file" id="profile" name="Userprrofile" accept="image/*"> <br><br>
+
+            <fieldset>
+                <legend><b>Contact Information</b></legend>
+                <label for="phone"> Phone Number : </label>
+                <input type="tel" id="phone" name="userPhone" placeholder="Enter your Phone Number" pattern="[0-9]{10}"
+                    required> <br><br>
+                <label for="email">Email Id : </label>
+                <input type="email" id="email" name="userEmail" placeholder="abc@gmail.com" required> <br><br>
+                <label for="address">Address : </label>
+                <textarea name="userAdress" id="address" rows="4" cols="50" placeholder="Enter your Address"></textarea>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Chocies : </b></legend>
+                <label for="lang">Favourite Language : </label>
+                <input type="checkbox" id="lang" name="programmingLang" value="JAVA">JAVA
+                <input type="checkbox" id="lang" name="programmingLang" value="JavaScript">JavaScript
+                <input type="checkbox" id="lang" name="programmingLang" value="Python">Python
+                <input type="checkbox" id="lang" name="programmingLang" value="C++" disabled>C++
+                <br><br>
+                <label for="sports">Sports : </label>
+                <select name="sports" id="sports" multiple size="2">
+                    <option value="">-----select------</option>
+                    <option value="Cricket" selected>Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Hockey">Hockey</option>
+                </select> <br><br>
+
+                <label for="food">Favourite Food : </label>
+                <select name="food" id="food">
+                    <option value="">----select----</option>
+                    <optgroup label="Non-Veg">
+                        <option value="Mutton">Mutton</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Pork">Pork</option>
+                    </optgroup>
+                    <optgroup label="Veg">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Burger">Burger</option>
+                    </optgroup>
+                </select> <br><br>
+
+                <label for="color">Favourite Color : </label>
+                <input type="color" name="userColor" id="color">
+                <br><br>
+
+                <label for="range">Range : </label>
+                <input type="range" id="range" name="userRange" min="0" max="100" step="5">
+                <br><br>
+
+                <label for="pet">Favourite Pet : </label>
+                <input list="pets" name="userPet" id="pet">
+                <datalist id="pets">
+                    <option value="Dog">
+                    <option value="Cat">
+                    <option value="Rabbit">
+                    <option value="Fish">
+                    <option value="Parrot">
+                    <option value="Elephant">
+                </datalist>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> <br><br>
+    </form>
+
+</body>
+
+</html>
