@@ -1,0 +1,57 @@
+CSS FLEX:
+---------
+
+  FLEX (also known as Flexbox) is a layout model that provides an efficient way
+to distribute space between items in a container, even when their size is dynamic.
+  It helps create responsive designs without relying heavily on float or positioning
+properties. 
+
+Key Features of Flexbox in CSS3:
+---------------------------------
+1. Flex Container: The parent element that holds the items.
+2. Flex Items: The child elements inside the flex container. 
+3. Main Axis: The primary axis along which flex items are placed (horizontal bydefault). 
+4. Cross Axis: The perpendicular axis to the main axis (vertical by default).
+
+Note:
+-----
+  - flex properties will apply to direct children of the flex container.
+  - flex properties will not apply to nested flex containers.
+
+Basic Syntax of Flexbox:
+            .container {
+            display: flex;
+            }
+
+Flexbox Properties (CSS3)
+1. Properties for the Flex Container:
+        1. display:Defines a flex container (flex or inline-flex). 
+        2. flex-direction:Sets the direction of the flex items.
+                         :flex-direction: row | row-reverse | column | column-reverse;
+        3. justify-content:Aligns flex items along the main axis .
+                          :justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+                          :horizontal alignment when flex-direction is row
+                          :vertical alignment when flex-direction is column              
+        4. align-items:Aligns flex items along the cross axis .
+                          :align-items: flex-start | flex-end | center | baseline | stretch;
+                          :vertical alignment when flex-direction is row
+                          :horizontal alignment when flex-direction is column 
+        5. align-content:Aligns a multi-line flex container along the cross axis. (when flex-wrap is set to wrap)
+        6. flex-wrap:Specifies if items should wrap to the next line or not.
+                    :flex-wrap: nowrap | wrap | wrap-reverse; 
+        7. Gap:Sets the spacing between items.
+              :gap: row-gap | column-gap;
+
+2. Properties for Flex Items:
+        1. order: Controls the order of the items in the container. 
+        2. flex-grow:Specifies how much the item should grow relative to others. 
+        3. flex-shrink:Specifies how much the item should shrink relative to others. 
+        4. flex-basis: Sets the initial size of the item. 
+        5. align-self:Aligns the individual item independently of others. 
+        
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1 Task</title>
+    <style>
+        .container {
+            min-height: 400px;
+            background-color: lightblue;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            /* main axis [horizontal] */
+            justify-content: flex-end;
+            /* cross axis [vertical] */
+            align-items: flex-start;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .first {
+            background-color: lightgrey;
+        }
+
+        .second {
+            background-color: lightcyan;
+        }
+
+        .third {
+            background-color: lightcoral;
+        }
+
+        .fourth {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first item">One</div>
+        <div class="second item">Two</div>
+        <div class="third item">Three</div>
+        <div class="fourth item">Four</div>
+    </div>
+</body>
+
+</html>
