@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid1 task</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            width: 43%;
+            background-color: goldenrod;
+        }
+
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .one {
+            grid-column: 1/6;
+            text-align: center;
+            padding: 35px;
+            color: rgb(200, 100, 13);
+        }
+
+        .two {
+            grid-column: 1/3;
+            text-align: center;
+            padding: 35px;
+            color: rgb(200, 100, 13);
+        }
+
+        .three {
+            grid-column: 3/6;
+            text-align: center;
+            padding: 35px;
+            color: rgb(200, 100, 13);
+        }
+
+        .four {
+            grid-column: 1/6;
+            grid-row: 3/5;
+            text-align: center;
+            padding:35px;
+            color: rgb(200, 100, 13);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item one">Header</div>
+        <div class="item two">Sidebar</div>
+        <div class="item three">Main content</div>
+        <div class="item four">Footer</div>
+    </div>
+</body>
+
+</html>

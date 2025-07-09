@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid4 Task</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: repeat(5,1fr); */
+            width: 100%;
+            min-height: 700px;
+            border: 1px solid black;
+            gap: 10px;
+            grid-template-areas: "navbar navbar navbar navbar navbar"
+                "section1 section1 section1 aside aside"
+                "section2 section2 section2 aside aside"
+                "footer footer footer footer footer";
+        }
+
+        nav,
+        section,
+        aside,
+        footer {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 40px;
+            padding: 40px;
+        }
+
+        nav {
+            background-color: lightblue;
+            grid-area: navbar;
+        }
+
+        footer {
+            background-color: rgb(243, 243, 126);
+            grid-area: footer;
+        }
+
+        aside {
+            background-color: rgb(150, 240, 150);
+            grid-area: aside;
+            padding: 150px;
+        }
+
+        .section1 {
+            background-color: lightcyan;
+            grid-area: section1;
+        }
+
+        .section2 {
+            background-color: lightgoldenrodyellow;
+            grid-area: section2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav>Navbar</nav>
+        <section class="section1">Section 1</section>
+        <section class="section2">Section 2</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

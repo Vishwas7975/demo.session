@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Div</title>
+  <style>
+    /* Default background color for small screens */
+    .responsive-div {
+      background-color: blue;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    /* For medium screens (min-width: 768px) */
+    @media (min-width: 768px) {
+      .responsive-div {
+        background-color: green;
+      }
+    }
+
+    /* For large screens (min-width: 1024px) */
+    @media (min-width: 1024px) {
+      .responsive-div {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="responsive-div">
+    This is a responsive div!
+  </div>
+</body>
+</html>

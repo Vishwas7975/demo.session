@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: lightsalmon;
+    grid-area: navbar;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    color: maroon;
+    list-style: none;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    min-height: 700px;
+    grid-template-areas: "navbar navbar navbar"
+        "Section1 Section1 Aside"
+        "Section1 Section1 Aside"
+        "Section2 Section2 Aside"
+        "Footer Footer Footer";
+    gap: 10px;
+}
+
+.s1 {
+    grid-area: Section1;
+    background-color: lightblue;
+}
+
+.s2 {
+    grid-area: Section2;
+    background-color: lightgoldenrodyellow;
+}
+
+aside {
+    grid-area: Aside;
+    background-color: lightgray;
+}
+
+footer {
+    background-color: lightseagreen;
+    grid-area: Footer;
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .grid-container {
+        display: grid;
+        min-height: 700px;
+        grid-template-areas: "navbar navbar navbar"
+            "Section1 Section1 Section1"
+            "Aside Aside Aside"
+            "Section2 Section2 Section2"
+            "Footer Footer Footer"
+    }
+
+    /* mobile media query */
+    ul {
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    aside {
+        background-color: lawngreen;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: "navbar navbar navbar navbar"
+            "Section1 Aside Aside Section2"
+            "Section1 Aside Aside Section2"
+            "Section1 Aside Aside Section2"
+            "Footer Footer Footer Footer"
+    }
+}

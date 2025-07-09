@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2 Task</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .four {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .six {
+            /* grid column shorthand [start/end] */
+            grid-column: 1/4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .nine {
+            /* Grid area shorthand [rowstart/columnstart/rowend/columnend] */
+            grid-area: 3/4/6/6;
+        }
+
+        .ten {
+            grid-area: 4/1/6/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+        <div class="item six"></div>
+        <div class="item seven"></div>
+        <div class="item eight"></div>
+        <div class="item nine"></div>
+        <div class="item ten"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>

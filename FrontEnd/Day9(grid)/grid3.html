@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid3 Task</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(6, 100px);
+            gap: 20px;
+        }
+
+        .item {
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        .one {
+            grid-column: 1/6;
+            background-color: lightblue;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .two {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            background-color: lightcoral;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .three {
+            grid-column: 1/4;
+            grid-row: 4/6;
+            background-color:lightgreen;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .four {
+            grid-column: 4/6;
+            grid-row: 2/6;
+            background-color:lightpink;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .five {
+            grid-column: 1/6;
+            background-color:lightgrey;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item one ">NavBar</div>
+        <div class="item two">Section 1</div>
+        <div class="item three">Section 2</div>
+        <div class="item four">Aside</div>
+        <div class="item five">Footer</div>    
+    </div>
+</body>
+
+</html>
